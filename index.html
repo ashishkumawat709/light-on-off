@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(98, 98, 192);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        h1{
+            color: bisque;
+        }
+        #myImage{
+            width: 100px;
+            height: 100px;
+        }
+        button{
+            width: 56px;
+            height: 56px;
+            background-color: crimson;
+            border-radius: 16px;
+            transition: 400ms;
+            z-index: 10000;
+        }
+    </style>
+</head>
+<body>
+<div class="main-heading">
+    <h1>Can you turn the light on ?</h1>
+    <button onclick="document.getElementById('myImage').src='on3.png'">Turn ON</button>
+    <button onclick="document.getElementById('myImage').src='off4.png'">Turn OFF</button>
+
+    <img src="off1.png" alt="" id="myImage">
+</div>
+
+    <script src="index2.js"></script>
+</body>
+</html>
